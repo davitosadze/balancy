@@ -1,0 +1,20 @@
+{
+  "name": "push-notifications-module",
+  "version": "1.0.0",
+  "type": "module",
+  "directus:extension": {
+    "type": "module",
+    "path": "dist/index.js",
+    "source": "src/index.ts",
+    "host": ">=11.0.0"
+  },
+  "scripts": {
+    "build": "directus-extension build"
+  },
+  "devDependencies": {
+    "@directus/extensions-sdk": "^12.0.0",
+    "@types/node": "^22.0.0",
+    "typescript": "^5.0.0",
+    "vue": "^3.4.0"
+  }
+}

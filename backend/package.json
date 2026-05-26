@@ -1,0 +1,22 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "directus start",
+    "bootstrap": "directus bootstrap",
+    "setup:premium-fields": "node scripts/setup-premium-fields.js",
+    "setup:premium-permissions": "node scripts/setup-premium-permissions.js",
+    "normalize:premium-trials": "node scripts/normalize-premium-trials.js",
+    "build:extensions": "cd extensions/delete-account && npm install && npm run build && cd ../push-notifications-module && npm install && npm run build && cd ../..",
+    "render-start": "directus bootstrap && directus start"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "directus": "^11.17.0",
+    "mysql2": "^3.20.0"
+  }
+}
